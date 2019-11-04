@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ExampleService } from '../services/example.service';
+import { KanyeService } from '../services/kanye.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public quote: Observable<string>;
+
+  constructor(public exampleService: ExampleService, public kanyeService: KanyeService) { }
 
   ngOnInit() {
+    this.quote = this.kanyeService.getQuote();
   }
 
 }
