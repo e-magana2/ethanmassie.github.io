@@ -1,36 +1,39 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #292929;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--primary);
+  color: var(--on-primary);
 }
 
 li {
-    float: left;
-    border-right: 1px solid #000000;
+  float: left;
+  border-right: 1px solid #000000;
 }
 
 li:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:focus {
-    outline: none;
+  outline: none;
 }
 
 li a:hover {
-    background-color: #292929;
+  background: var(--secondary);
+  color: var(--on-secondary);
 }
 
 .active {
-    background-color: #006666;
+  background: var(--active);
+  color: var(--on-active);
 }
