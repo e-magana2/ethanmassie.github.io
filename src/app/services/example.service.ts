@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ExampleService{ 
     
-    private message = 'Hello, World';
+    private message = 'Hello, Angular';
 
     constructor() {}
 
